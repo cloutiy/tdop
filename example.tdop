@@ -1,0 +1,36 @@
+x = rand(200);
+num = 0 if x < 100 else 1;
+
+sum = (a, b) -> a + b;
+add_one = x -> x + 1;
+mult_and_sum = (a, b) -> {
+    m = a * b;
+    return (m, a+b);
+};
+
+print_hello = () -> {
+    print("Hello World!!");
+};
+
+i = 0;
+list = [1, 2, 3];
+while i < len(list) {
+    do_stuff(list[i]);
+    i += 1;
+}
+
+if a == true and b == not true {
+    do_stuff();
+} else if not a and b {
+    do_other_stuff();
+} else {
+    do_this_stuff = () -> {
+        do_some_stuff();
+        do_special_stuff();
+    };
+    do_this_stuff();
+    (s -> {
+        text = "Hello " + s + "!!!";
+        print(text);
+    })("John Doe");
+}
